@@ -1,2 +1,2 @@
 # pi-dots
-Dotfiles on Raspberry Pi
+Dotfiles tweaked on Raspberry Pi 400 XFCE
