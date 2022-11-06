@@ -13,14 +13,14 @@
 # Get rid of Auto Load Dialogue
 config.load_autoconfig(False)
 ## Ranger as file picker
-config.set("fileselect.handler", "external")
-config.set("fileselect.single_file.command", ['urxvt', '-e', 'ranger', '--choosefile={}'])
-config.set("fileselect.multiple_files.command", ['urxvt', '-e', 'ranger', '--choosefiles={}'])
+#config.set("fileselect.handler", "external")
+#config.set("fileselect.single_file.command", ['urxvt', '-e', 'ranger', '--choosefile={}'])
+#config.set("fileselect.multiple_files.command", ['urxvt', '-e', 'ranger', '--choosefiles={}'])
 
 # Setting dark mode
 #config.set("colors.webpage.darkmode.enabled", True)
 
-#c.url.start_pages=('/home/bledley/startpage/index.html')
+c.url.start_pages=('/home/bledley/startpage/index.html')
 # Open video in Mpv
 config.bind(',v', 'hint links spawn mpv {hint-url}')
 config.bind(',id', 'hint images download')
@@ -109,7 +109,7 @@ c.colors.completion.odd.bg = '#262626'
 c.colors.completion.even.bg = '#262626'
 
 # Default Zoom
-c.zoom.default = '90%'
+#c.zoom.default = '90%'
 
 # Vim as editor
 c.editor.command = ['st', '-e', 'vim', '{}']
@@ -279,22 +279,22 @@ config.bind('<6>', 'tab-focus 6')
 ## Background color of the context menu. If set to null, the Qt default
 ## is used.
 ## Type: QssColor
-c.colors.contextmenu.menu.bg = '#d5d5d5'
+c.colors.contextmenu.menu.bg = '#2e3440'
 
 ## Foreground color of the context menu. If set to null, the Qt default
 ## is used.
 ## Type: QssColor
-c.colors.contextmenu.menu.fg = '#525252'
+c.colors.contextmenu.menu.fg = '#8a8a8a'
 
 ## Background color of the context menu's selected item. If set to null,
 ## the Qt default is used.
 ## Type: QssColor
-c.colors.contextmenu.selected.bg = '#BBCCDD'
+c.colors.contextmenu.selected.bg = '#3e4450'
 
 ## Foreground color of the context menu's selected item. If set to null,
 ## the Qt default is used.
 ## Type: QssColor
-c.colors.contextmenu.selected.fg = '#272727'
+c.colors.contextmenu.selected.fg = '#D5d5d5'
 
 ## Background color for the download bar.
 ## Type: QssColor
@@ -501,7 +501,7 @@ c.colors.statusbar.url.fg = '#7d7d7d'
 
 ## Foreground color of the URL in the statusbar for hovered links.
 ## Type: QssColor
-c.colors.statusbar.url.hover.fg = '#6689BD'
+c.colors.statusbar.url.hover.fg = '#BBCCDD'
 
 ## Foreground color of the URL in the statusbar on successful load
 ## (http).
@@ -2275,7 +2275,7 @@ c.zoom.levels = ['25%', '33%', '50%', '67%', '75%', '90%', '100%', '110%', '125%
 # config.bind('<Ctrl-A>', 'navigate increment')
 # config.bind('<Ctrl-Alt-p>', 'print')
 # config.bind('<Ctrl-B>', 'scroll-page 0 -1')
-config.bind('<Ctrl-D>', 'scroll-page 0 0.5')
+#config.bind('<Ctrl-D>', 'scroll-page 0 0.5')
 # config.bind('<Ctrl-F5>', 'reload -f')
 # config.bind('<Ctrl-F>', 'scroll-page 0 1')
 # config.bind('<Ctrl-N>', 'open -w')
@@ -2289,7 +2289,7 @@ config.bind('<Ctrl-D>', 'scroll-page 0 0.5')
 # config.bind('<Ctrl-Shift-W>', 'close')
 # config.bind('<Ctrl-T>', 'open -t')
 # config.bind('<Ctrl-Tab>', 'tab-focus last')
-config.bind('<Ctrl-U>', 'scroll-page 0 -0.5')
+#config.bind('<Ctrl-U>', 'scroll-page 0 -0.5')
 # config.bind('<Ctrl-V>', 'mode-enter passthrough')
 # config.bind('<Ctrl-W>', 'tab-close')
 # config.bind('<Ctrl-X>', 'navigate decrement')
@@ -2336,7 +2336,8 @@ config.bind('<Ctrl-U>', 'scroll-page 0 -0.5')
 # config.bind('b', 'set-cmd-text -s :quickmark-load')
 # config.bind('cd', 'download-clear')
 # config.bind('co', 'tab-only')
-# config.bind('d', 'tab-close')
+config.bind('d', 'scroll-page 0 0.5')
+config.bind('u', 'scroll-page 0 -0.5')
 # config.bind('f', 'hint')
 # config.bind('g$', 'tab-focus -1')
 # config.bind('g0', 'tab-focus 1')
@@ -2400,7 +2401,7 @@ config.bind('gd', 'download')
 # config.bind('tsH', 'config-cycle -p -t -u *://*.{url:host}/* content.javascript.enabled ;; reload')
 # config.bind('tsh', 'config-cycle -p -t -u *://{url:host}/* content.javascript.enabled ;; reload')
 # config.bind('tsu', 'config-cycle -p -t -u {url} content.javascript.enabled ;; reload')
-config.bind('u', 'undo')
+#config.bind('u', 'undo')
 # config.bind('v', 'mode-enter caret')
 # config.bind('wB', 'set-cmd-text -s :bookmark-load -w')
 # config.bind('wIf', 'devtools-focus')
