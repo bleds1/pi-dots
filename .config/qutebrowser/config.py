@@ -56,15 +56,15 @@ c.fonts.debug_console = '9pt "Terminus"'
 c.fonts.statusbar = '9pt "Terminus"' 
 ## Background color of the completion widget category headers.
 ## Type: QssColor
-c.colors.completion.category.bg = '#1a1a1a'
+c.colors.completion.category.bg = '#191C21'
 
 ## Bottom border color of the completion widget category headers.
 ## Type: QssColor
-c.colors.completion.category.border.bottom = '#262626'
+c.colors.completion.category.border.bottom = '#191C21'
 
 ## Top border color of the completion widget category headers.
 ## Type: QssColor
-c.colors.completion.category.border.top = '#262626'
+c.colors.completion.category.border.top = '#191C21'
 
 ## Foreground color of completion widget category headers.
 ## Type: QtColor
@@ -72,7 +72,7 @@ c.colors.completion.category.fg = '#cccccc'
 
 ## Background color of the completion widget for even rows.
 ## Type: QssColor
-c.colors.completion.even.bg = '#272727'
+c.colors.completion.even.bg = '#191C21'
 
 ## Text color of the completion widget. May be a single color to use for
 ## all columns or a list of three colors, one for each column.
@@ -105,14 +105,14 @@ c.colors.completion.match.fg = '#cccccc'
 
 ## Background color of the completion widget for odd rows.
 ## Type: QssColor
-c.colors.completion.odd.bg = '#262626'
-c.colors.completion.even.bg = '#262626'
+c.colors.completion.odd.bg = '#191C21'
+c.colors.completion.even.bg = '#191C21'
 
 # Default Zoom
 #c.zoom.default = '90%'
 
-# Vim as editor
-c.editor.command = ['st', '-e', 'vim', '{}']
+# Vim as editor TODO:not working
+c.editor.command = ['xfce4-terminal', '-e', 'nvim', '{file}']
 
 # tabs
 c.tabs.favicons.show = 'never'
@@ -122,7 +122,7 @@ c.tabs.title.format = '{current_title}'
 c.downloads.location.directory = '/home/bledley/Downloads'
 
 # Default search engines
-c.url.searchengines = {'DEFAULT': 'https://search.brave.com/search?q={}','dd': 'https://duckduckgo.com/?q={}', 'am': 'https://www.amazon.co.uk/s?k={}','go': 'https://www.google.com/search?q={}','aw': 'https://wiki.archlinux.org/?search={}', 'r': 'https://teddit.net/r/{}', 'wik': 'https://wikiless.org/wiki/Main_Page?lang=en/search={}'}
+c.url.searchengines = {'DEFAULT': 'https://search.brave.com/search?q={}','dd': 'https://duckduckgo.com/?q={}','aw': 'https://wiki.archlinux.org/?search={}', 'r': 'https://teddit.net/r/{}', 'wik': 'https://wikiless.org/wiki/Main_Page?lang=en/search={}'}
 
 ## Remove it to not load settings done via the GUI.
 # config.load_autoconfig(True)
@@ -2314,7 +2314,7 @@ c.zoom.levels = ['25%', '33%', '50%', '67%', '75%', '90%', '100%', '110%', '125%
 # config.bind('J', 'tab-next')
 # config.bind('K', 'tab-prev')
 # config.bind('L', 'forward')
-# config.bind('M', 'bookmark-add')
+config.bind('B', 'bookmark-add')
 # config.bind('N', 'search-prev')
 # config.bind('O', 'set-cmd-text -s :open -t')
 # config.bind('PP', 'open -t -- {primary}')
