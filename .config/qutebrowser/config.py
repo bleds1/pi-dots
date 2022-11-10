@@ -14,8 +14,8 @@ config.bind(',b', 'hint links spawn firefox {hint-url}')
 c.colors.tabs.bar.bg = '#262626'
 c.colors.tabs.odd.bg = '#262626'
 c.colors.tabs.even.bg = '#262626'
-c.colors.tabs.selected.odd.bg = '#212121'
-c.colors.tabs.selected.even.bg = '#212121'
+c.colors.tabs.selected.odd.bg = '#1D1D1D'
+c.colors.tabs.selected.even.bg = '#1D1D1D'
 c.colors.tabs.selected.odd.fg = '#adadad'
 c.colors.tabs.selected.even.fg = '#adadad'
 c.colors.tabs.odd.fg = '#5e5e5e'
@@ -25,11 +25,11 @@ c.fonts.default_size = '9pt'
 c.fonts.completion.entry = '11pt "Terminus"'
 c.fonts.debug_console = '9pt "Terminus"'
 c.fonts.statusbar = '9pt "Terminus"' 
-c.colors.completion.category.bg = '#121419'
-c.colors.completion.category.border.bottom = '#191C21'
-c.colors.completion.category.border.top = '#191C21'
+c.colors.completion.category.bg = '#1D1D1D'
+c.colors.completion.category.border.bottom = '#1D1D1D'
+c.colors.completion.category.border.top = '#1D1D1D'
 c.colors.completion.category.fg = '#cccccc'
-c.colors.completion.even.bg = '#191C21'
+c.colors.completion.even.bg = '#1D1D1D'
 c.colors.completion.fg = ['#BBBBBB', '#ffffff', '#BBBBBB']
 c.colors.completion.item.selected.bg = '#009994'
 c.colors.completion.item.selected.border.bottom = '#009994'
@@ -37,9 +37,9 @@ c.colors.completion.item.selected.border.top = '#009994'
 c.colors.completion.item.selected.fg = '#cccccc'
 c.colors.completion.item.selected.match.fg = '#ffffff'
 c.colors.completion.match.fg = '#ffffff'
-c.colors.completion.odd.bg = '#191C21'
-c.colors.completion.even.bg = '#191C21'
-c.editor.command = ['xfce4-terminal', '-e', 'nvim {file}'] 
+c.colors.completion.odd.bg = '#1D1D1D'
+c.colors.completion.even.bg = '#1D1D1D'
+c.editor.command = ['alacritty', '-e', 'nvim', '-c', 'normal {line}G{columnn0}l', '{file}'] 
 c.tabs.favicons.show = 'never'
 c.tabs.title.format = '{current_title}'
 c.downloads.location.directory = '/home/bledley/Downloads'
@@ -56,7 +56,7 @@ config.bind('<3>', 'tab-focus 3')
 config.bind('<4>', 'tab-focus 4')
 config.bind('<5>', 'tab-focus 5')
 config.bind('<6>', 'tab-focus 6')
-c.colors.contextmenu.menu.bg = '#2e3440'
+c.colors.contextmenu.menu.bg = '#1D1D1D'
 c.colors.contextmenu.menu.fg = '#8a8a8a'
 c.colors.contextmenu.selected.bg = '#3e4450'
 c.colors.contextmenu.selected.fg = '#D5d5d5'
@@ -136,3 +136,4 @@ config.bind(',dr', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/
 config.bind(',gr', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/solarized-everything-css/css/gruvbox/gruvbox-all-sites.css ""')
 config.bind(',sd', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css ""')
 config.bind(',sl', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/solarized-everything-css/css/solarized-light/solarized-light-all-sites.css ""')
+c.confirm_quit = ['downloads']
