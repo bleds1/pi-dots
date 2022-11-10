@@ -147,6 +147,7 @@ alias h="history | f"
 alias t="task"
 alias ta="task add"
 alias timer="termdown --no-figlet --alt-format --no-text-magic"
+alias btop="bpytop"
 #git
 alias gs='git status'
 alias ga='git add -A'
