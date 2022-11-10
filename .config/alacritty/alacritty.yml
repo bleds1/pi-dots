@@ -30,7 +30,7 @@ draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: "#1D1D1D"
+    background: "#1E1E1E"
     foreground: "#a9b1d6"
   normal:
     black: "#32344a"
@@ -51,7 +51,7 @@ colors:
     cyan: "#0db9d7"
     white: "#acb0d0"
   cursor:
-    text: "#1D1D1D"
+    text: "#1E1E1E"
     cursor: "#57D1B9"
 selection:
   save_to_clipboard: false
