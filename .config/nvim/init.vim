@@ -113,9 +113,9 @@ let g:startify_bookmarks = [
             \ { '.': '~/dotfiles/pi-dots' },
 			\ { 'd': '~/Documents/vimwiki/diary/diary.md'},
 			\ { 'a': '~/dotfiles/pi-dots/.config/alacritty/alacritty.yml' },
-            \ { 'n': '~/.config/nvim/init.vim' },
- 			\ { 'm': '~/dotfiles/.tmux.conf' },
-            \ { 'z': '~/.zshrc' },
+            \ { 'n': '~/dotfiles/pi-dots/.config/nvim/init.vim' },
+ 			\ { 'm': '~/dotfiles/pi-dots.tmux.conf' },
+            \ { 'z': '~/dotfiles/pi-dots/.zshrc' },
 			\ ]
 "Vimwiki
 ".md files outside the wiki are not seen as .vimwiki
