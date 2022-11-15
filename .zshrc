@@ -149,6 +149,7 @@ alias ta="task add"
 alias timer="termdown --no-figlet --alt-format --no-text-magic"
 alias btop="bpytop"
 alias nf="neofetch"
+alias n="v ~/Documents/vault/1.inbox/$(date +%Y-%m-%d-%H%M).md"
 #git
 alias gs='git status'
 alias ga='git add -A'
